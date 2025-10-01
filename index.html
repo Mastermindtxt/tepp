@@ -1,304 +1,369 @@
+
+
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr Tanishq Portfolio</title>
+
+    <title>SCAN SHIELD - Secure Link Scanner</title>
+
+    <!-- Load Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Use Inter font family -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom background to simulate the high-tech/circuit board look */
+        
+        .cyber-bg {
+            background-color: #0d121c;
+            /* Deep dark blue */
+            background-image: radial-gradient(circle at 50% 50%, rgba(36, 192, 237, 0.05) 0%, rgba(36, 192, 237, 0.00) 70%), linear-gradient(to top, #0d121c, #1a2233);
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            color: #e0f2f7;
+            /* Light text for dark background */
+        }
+        /* Neon blue border effect */
+        
+        .neon-border {
+            border: 2px solid;
+            border-image: linear-gradient(45deg, #1e90ff, #00ffff, #1e90ff) 1;
+            box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff40;
+        }
+        /* Hamburger icon styling */
+        
+        .hamburger-icon span {
+            display: block;
+            height: 3px;
+            width: 25px;
+            background: #00ffff;
+            border-radius: 9999px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .hamburger-icon span:not(:last-child) {
+            margin-bottom: 4px;
+        }
+        /* Mobile menu specific styling for left slide-in effect */
+        
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            /* Start position: completely off the left screen */
+            transform: translateX(-100%);
+        }
+        
+        .mobile-menu.active {
+            /* End position: visible */
+            transform: translateX(0);
+        }
+        /* Utility to prevent background scrolling when menu is open */
+        
+        .overflow-hidden {
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 
-<body>
-    <div id="preloader"></div>
-    <div class="first-area">
-        <div class="leftYimg"><img src="precets/leftY.png" alt=""></div>
-        <div class="rightYimg"><img src="precets/rightY.png" alt=""></div>
-        <div class="tanishqIMG"><img src="precets/tanishq-png.png" alt="my img"></div>
-        <div class="headerHover">Hover for Navigation Panel</div>
-        <div class="header">
-            <div class="logo">タニュクー</div>
-            <div class="header-element">
-                <div class="aboutme">About Me</div>
-                <div class="skills">Skills</div>
-                <div class="Portfolio">Portfolio</div>
-                <div class="contactme">contactme</div>
-            </div>
-        </div>
-        <div class="basic-bio">
-            HI, I'm
-            <div class="name">
-                Tanishq Saxena
-                <div class="main-skills">Web-developer / Android-Moder</div>
-            </div>
-            <div class="social-media">
-                <a rel="noopener noreferrer" target="_blank" href="" class="social-links"><i
-                        class="fa-brands fa-instagram itag" style="color: black"></i></a>
-                <a rel="noopener noreferrer" target="_blank" href="https://t.me/fusion_spirite" class="social-links"><i
-                        class="fa-brands fa-telegram itag" style="color: black"></i></a>
-                <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/tanishqfromindo"
-                    class="social-links"><i class="fa-brands fa-linkedin-in itag" style="color: black"></i></a>
-                <a rel="noopener noreferrer" target="_blank" href="https://github.com/mastermindtxt"
-                    class="social-links"><i class="fa-brands fa-github itag" style="color: black"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="second-area">
-        <div class="Sec-area-header">
-            <div class="Sec-area-logo">タニュクー</div>
-            <div class="Sec-area-header-element">
-                <div class="Sec-area-aboutme">About Me</div>
-                <div class="Sec-area-skills">Skills</div>
-                <div class="Sec-area-Portfolio">Portfolio</div>
-                <div class="Sec-area-contactme">Contactme</div>
-            </div>
-        </div>
-        <div class="projects">
-            <div class="left-project-area">
-                My Top-Projects
-                <div class="project-main-tags">
-                    Project heading
-                    <div class="short-bio-project">
-                        project long bio
-                    </div>
-                </div>
-            </div>
-            <div class="right-project-area">
-                <div class="project-1">
-                    <div class="project-image" alt="bio-image"></div>
-                    <div class="project-bio"></div>
-                </div>
-                <div class="project-2">
-                    <div class="project-image" alt="bio-image"></div>
-                    <div class="project-bio"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="third-area">
-        <div class="my-surrounding">My Surrounding and Technologies
-            <div class="current-surrounding">Things around me in 2025</div>
-            <div class="changing-photos">
-                <div class="overlay"></div>
-            </div>
-        </div>
-        <div class="surrounding-1">
-            <div class="box TAbox-1">
-                <div class="overlay">
-                    <div class="image img1"></div>
-                    <div class="bio-area">
-                        <div class="bio-heading">Android</div>
-                        <div class="image-bio">
-                            <div class="inner-box">
-                                <ul>
-                                    <li>An Linux bassed OS covering almost 78% of totale OS using all over the world</li>
-                                    <li>Softwares like Android from google is the base of every Android bassed AOSP rom</li>
-                                    <li>In android feild there is an area called AOSP modding and AOSP developing....</li>
-                                </ul>
-                            </div>
-                            <div class="click-inner-btn">Click to know more</div>
-                        </div>
-                    </div>
+<body class="cyber-bg">
+
+
+
+    <!-- Header and Navigation -->
+
+    <header class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm shadow-xl border-b border-[#00ffff] border-opacity-30">
+
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+
+
+
+            <!-- Hamburger Icon (Visible on Mobile, Far Left) -->
+
+            <!-- Order-1 pushes it to the left on small screens -->
+
+            <button id="menu-button" class="md:hidden p-2 rounded-full hover:bg-white/10 transition-colors z-50 order-1" aria-label="Open menu">
+
+                <!-- Three horizontal line icon -->
+
+                <div class="hamburger-icon space-y-1">
+
+                    <span class="block"></span>
+
+                    <span class="block"></span>
+
+                    <span class="block"></span>
+
                 </div>
 
-            </div>
-            <div class="box TAbox-2">
-                <div class="overlay">
-                    <div class="image img2"></div>
-                    <div class="bio-area">
-                        <div class="bio-heading">Linux</div>
-                        <div class="image-bio">
-                            <div class="inner-box">
-                                <ul>
-                                    <li>Linux is an OS which widly used for sicurty and anonemiity</li>
-                                    <li>One if the linux Distrose Named KALI LINUX which is the most used linux distro for pentesting and hacking.</li>
-                                    <li>Linux Distrose have warious faces some looks like windows some look like android.....</li>
-                                </ul>
-                            </div>
-                            <div class="click-inner-btn">Click to know more</div>
-                        </div>
-                    </div>
-                </div>
+            </button>
+
+
+
+            <!-- Logo/Title -->
+
+            <!-- Order-2 centers it on small screens, or aligns it normally on desktop -->
+
+            <h1 class="text-3xl font-extrabold tracking-widest text-[#00ffff] order-2 md:order-none">
+
+                <span class="text-[#1e90ff]">SCAN</span> SHIELD
+
+            </h1>
+
+
+
+            <!-- Desktop Menu (Hidden on Mobile) -->
+
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+
+                <a href="#" class="hover:text-[#00ffff] transition-colors">Home</a>
+
+                <a href="#history" class="hover:text-[#00ffff] transition-colors">Scan History</a>
+
+                <a href="#attacks" class="hover:text-[#00ffff] transition-colors">Attack Types</a>
+
+                <a href="#awareness" class="hover:text-[#00ffff] transition-colors">Awareness</a>
+
+                <a href="#feedback" class="hover:text-[#00ffff] transition-colors">Feedback</a>
+
+            </nav>
+
+
+
+            <!-- Spacer to balance the logo on mobile -->
+
+            <div class="w-8 md:hidden order-3"></div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Mobile Menu Overlay (Slides in from the LEFT) -->
+
+    <div id="mobile-menu-overlay" class="mobile-menu fixed top-0 left-0 h-full w-full max-w-xs bg-[#0d121c] z-40 p-6 shadow-2xl border-r-2 border-[#1e90ff] md:hidden">
+
+        <div class="pt-20 flex flex-col space-y-6 text-xl font-semibold">
+
+            <!-- Close button for the menu (optional, but good UX) -->
+
+            <button id="close-menu-button" class="absolute top-4 right-4 text-3xl text-[#00ffff] hover:text-[#1e90ff] transition-colors" aria-label="Close menu">
+
+                &times;
+
+            </button>
+
+
+
+            <a href="#" class="block p-2 rounded-lg hover:bg-[#1a2233] transition-colors border-b border-gray-700">Home</a>
+
+            <a href="#history" class="block p-2 rounded-lg hover:bg-[#1a2233] transition-colors border-b border-gray-700">Scan
+                History</a>
+
+            <a href="#attacks" class="block p-2 rounded-lg hover:bg-[#1a2233] transition-colors border-b border-gray-700">Types of
+                Attacks</a>
+
+            <a href="#awareness" class="block p-2 rounded-lg hover:bg-[#1a2233] transition-colors border-b border-gray-700">Security
+                Awareness</a>
+
+            <a href="#feedback" class="block p-2 rounded-lg hover:bg-[#1a2233] transition-colors border-b border-gray-700">Feedback &
+                Support</a>
+
+            <a href="#about" class="block p-2 rounded-lg hover:bg-[#1a2233] transition-colors">About SCAN SHIELD</a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Main Content Area -->
+
+    <main class="max-w-7xl mx-auto p-4 sm:p-8">
+
+
+
+        <!-- Scanner Card (Recreating the look from the screenshot) -->
+
+        <section class="mt-16 sm:mt-24 p-6 sm:p-12 neon-border rounded-xl bg-black/50 backdrop-blur-sm max-w-4xl mx-auto">
+
+
+
+            <div class="text-center mb-10">
+
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-[#e0f2f7] mb-2 tracking-wide">SCAN & STAY AWARE</h2>
+
+                <p class="text-xl text-[#00ffff] font-light">UPLOAD FILES OR PASTE LINKS HERE</p>
 
             </div>
-            <div class="box TAbox-3">
-                <div class="overlay">
-                    <div class="image img3"></div>
-                    <div class="bio-area">
-                        <div class="bio-heading">Japanese</div>
-                        <div class="image-bio">
-                            <div class="inner-box">
-                                <ul>
-                                    <li>Japanese is the language which have three scripts in it.. Hiragana, Katakana and Kanji</li>
-                                    <li>Hiragana is used for writing native Japanese words where Katakana is used for writing foren words</li>
-                                    <li>Kanji drived form china and used for many perposed and this is an symbolic language......</li>
-                                </ul>
-                            </div>
-                            <div class="click-inner-btn">Click to know more</div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+            <!-- Scanner Input -->
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-10">
+
+                <input type="text" placeholder="Scan URL's, Applications, Files, etc..." class="flex-grow p-4 text-lg rounded-lg bg-[#1a2233] border-2 border-[#1e90ff] focus:ring-2 focus:ring-[#00ffff] focus:border-[#00ffff] text-white placeholder-gray-400 outline-none">
+
+                <button class="px-8 py-4 text-lg font-bold rounded-lg text-black bg-[#00ffff] hover:bg-[#1e90ff] transition-all shadow-lg shadow-[#00ffff]/40">
+
+                    SCAN
+
+                </button>
 
             </div>
-        </div>
-    </div>
-    <div class="fourth-area">
-        <div class="FA-heading">
-            <div class="FA-main-line">Something from my life</div>
-            <div class="FA-sec-line">My intrest,work and love</div>
-        </div>
-        <div id="surrounding-1">
-            <div class="box box-1">
-                <div class="overlay">
-                    <div class="img-area">
-                        <div class="image img1"></div>
-                        <div class="right-img-bio">
-                            <div class="image-bio">My studies</div>
-                            <div class="image-bio-second">
-                                <ul class="ul">
-                                    <li class="li">Pursuing BCA from KCMT university Rithora Breilly</li>
-                                    <li class="li">Prepairing for JLPT N4 exams</li>
-                                    <li class="li">Learning computer languages like : NODEJS, C, JAVA etc</li>
-                                    <li class="li">12th STD passedout in 2025</li>
-                                    <li class="li">10th STD passedout in 2023</li>
-                                </ul>
-                            </div>
-                            <a href="" class="click-btn">Click to know More</a>
-                        </div>
-                    </div>
-                    <div class="bio-area">
-                        <div class="image-bio">My studies</div>
-                        <div class="image-bio-second">
-                            <ul class="ul">
-                                <li class="li">Pursuing BCA from KCMT university Rithora Breilly</li>
-                                <li class="li">Prepairing for JLPT N4 exams</li>                            </ul>
-                            <div class="below-message">Read More : HOVER on ME</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box box-2">
-                <div class="overlay">
-                    <div class="img-area">
-                        <div class="image img2"></div>
-                        <div class="right-img-bio">
-                            <div class="image-bio">My conections</div>
-                            <div class="image-bio-second">
-                                <ul class="ul">
-                                    <li class="li">linkedin - No Info right now</li>
-                                    <li class="li">Telegram - I have a community</li>
-                                    <li class="li">Instagram - I didnt have a professional ac yet</li>
-                                    <li class="li">X - no info yet</li>
-                                </ul>
-                            </div>
-                            <a href="" class="click-btn">Click to know More</a>
-                        </div>
-                    </div>
-                    <div class="bio-area">
-                        <div class="image-bio">My conections</div>
-                        <div class="image-bio-second">
-                            <ul class="ul">
-                                <li class="li">linkedin - No Info right now</li>
-                                <li class="li">Telegram - I have a community</li>
-                            </ul>
-                            <div class="below-message">Read More : HOVER on ME</div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+            <!-- Feature Summary -->
+
+            <div class="text-center mt-8">
+
+                <p class="text-2xl font-semibold text-white mb-2">Free & OpenSource</p>
+
+                <p class="text-gray-400">Upload files, URLs, or paths. Instantly verify files & links. Free of cost for everyone forever.</p>
 
             </div>
-            <div class="box box-3">
-                <div class="overlay">
-                    <div class="img-area">
-                        <div class="image img3"></div>
-                        <div class="right-img-bio">
-                            <div class="image-bio">What am i doing Right now</div>
-                            <div class="image-bio-second">
-                                <ul class="ul">
-                                    <li class="li">Working on my Portfolio Website</li>
-                                    <li class="li">Building fast and powerfull aosp coustomising script</li>
-                                    <li class="li">Creating a Flashable module for aosp roms for changing logo.bin, bootanimation etc</li>
-                                    <li class="li">Developing a Telegram bot for my group managment</li>
-                                </ul>
-                            </div>
-                            <a href="" class="click-btn">Click to know More</a>
-                        </div>
-                    </div>
-                    <div class="bio-area">
-                        <div class="image-bio">what am i doing Right now</div>
-                        <div class="image-bio-second">
-                            <ul class="ul">
-                                <li class="li">Working on my Portfolio Website</li>
-                                <li class="li">Building fast and powerfull aosp coustomising script</li>
-                            </ul>
-                            <div class="below-message">Read More : HOVER on ME</div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+            <!-- Placeholder for Security Graphic (As seen in screenshot) -->
+
+            <div class="mt-12 flex justify-center">
+
+                <!-- Using an inline SVG icon for the graphic -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 sm:w-32 sm:h-32 text-[#00ffff]" viewBox="0 0 24 24" fill="currentColor">
+
+                    <path
+                        d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 18.2c-4.41-1.28-7-5.74-7-10.74V7l7-3.11V19.2zm-1.88-5.32l-2.4-2.4a1 1 0 011.41-1.41l1.7 1.7 4.3-4.3a1 1 0 011.41 1.41l-5 5a1 1 0 01-1.41 0z" />
+
+                </svg>
 
             </div>
-        </div>
-    </div>
-    <div class="fifth-area">
-        <div class="surrounding-1">
-            <div class="surrounding-1-image"></div>
-        </div>
-    </div>
-    <div class="six-area">
-        <div class="surrounding-1">
-        </div>
-    </div>
-    <div class="seventh-area">
-        <div class="finnal-checkpoint">
-            Hey there, This was the last checkpoint of my portfolio.
-        </div>
-        <div class="seventh-area-flex">
-            <div class="tech-area">
-                <div class="tech-1">
-                    <div class="languages">css</div>
-                    <div class="languages">js</div>
-                    <div class="languages">c</div>
-                    <div class="languages">nodejs</div>
-                    <div class="languages">reactjs</div>
-                </div>
-                <div class="tech-bio">My Tech Stacks</div>
-                <div class="tech-2">
-                    <div class="languages">nodejs</div>
-                    <div class="languages">expressjs</div>
-                    <div class="languages">canva</div>
-                    <div class="languages">figma</div>
-                </div>
-            </div>
-            <div class="info-bottom-area">
-                <div class="info-left-area">
-                    <div class="finnal-message">
-                        <div class="nav-text"><i class="fa-regular fa-face-laugh-beam"></i> Hey there this is the last
-                            checkpoint of my websites home page;</div>
-                        <div class="nav-buttons">
-                            <a rel="noopener noreferrer" target="_blank" href="" class="navi-1">Telegram</a>
-                            <a rel="noopener noreferrer" target="_blank" href="" class="navi-1">GitHub</a>
-                            <a rel="noopener noreferrer" target="_blank" href="" class="navi-1">Linkedin</a>
-                            <a rel="noopener noreferrer" target="_blank" href="" class="navi-1">Instagram</a>
-                            <a rel="noopener noreferrer" target="_blank" href="" class="navi-1">Feedback</a>
-                        </div>
-                    </div>
-                    <div class="info-image"></div>
-                    <div class="rights-area">
-                        <div class="rights-text"><i class="fa-regular fa-copyright"></i> All rights reserved to
-                            @Tanishq-saxena 2025 :</div>
-                        <div class="rights-test-2">contact : contacttashu@gmail.com</div>
 
-                    </div>
-                </div>
-                <div class="info-right-area">
-                    <div class="info-image"></div>
-                    <div class="info-image-text"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="jsFiles/main.js"></script>
-    <script src="jsFiles/preloader.js"></script>
+
+
+        </section>
+
+
+
+        <!-- Placeholder Sections for Menu Items -->
+
+        <section id="attacks" class="pt-20 my-16 p-6 rounded-lg bg-black/30">
+
+            <h3 class="text-4xl font-bold text-[#00ffff] mb-4">Types of Attacks</h3>
+
+            <p class="text-gray-300">Detailed information on Phishing, Ransomware, DDoS, and Malware. Learn how to identify and avoid common cyber threats.</p>
+
+        </section>
+
+
+
+        <section id="awareness" class="pt-20 my-16 p-6 rounded-lg bg-black/30">
+
+            <h3 class="text-4xl font-bold text-[#00ffff] mb-4">Security Awareness & Resources</h3>
+
+            <p class="text-gray-300">Best practices for password management, two-factor authentication, and safe browsing habits. Includes links to official cybersecurity guides.</p>
+
+        </section>
+
+
+
+        <section id="feedback" class="pt-20 my-16 p-6 rounded-lg bg-black/30">
+
+            <h3 class="text-4xl font-bold text-[#00ffff] mb-4">Feedback & Support</h3>
+
+            <p class="text-gray-300">We appreciate your input! Use this section to report bugs, suggest new features, or get help with the scanner.</p>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer class="p-6 text-center border-t border-[#00ffff] border-opacity-30 mt-20">
+
+        <p class="text-gray-500 text-sm">2025 All rights reserved by Scan Shield Team.</p>
+
+    </footer>
+
+
+
+    <!-- JavaScript for Menu Toggle -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const menuButton = document.getElementById('menu-button');
+
+            const mobileMenu = document.getElementById('mobile-menu-overlay');
+
+            const closeMenuButton = document.getElementById('close-menu-button');
+
+
+
+            const toggleMenu = () => {
+
+                mobileMenu.classList.toggle('active');
+
+                // Toggle overflow-hidden on body to prevent background scrolling 
+
+                document.body.classList.toggle('overflow-hidden');
+
+            };
+
+
+
+            // Toggle menu when hamburger button is clicked 
+
+            menuButton.addEventListener('click', toggleMenu);
+
+
+
+            // Close menu when close button is clicked 
+
+            closeMenuButton.addEventListener('click', toggleMenu);
+
+
+
+
+
+            // Close menu when a link is clicked inside the mobile menu 
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+
+                link.addEventListener('click', () => {
+
+                    if (mobileMenu.classList.contains('active')) {
+
+                        toggleMenu();
+
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+
+
+
 </body>
 
 </html>
